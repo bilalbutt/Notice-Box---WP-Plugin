@@ -1,5 +1,5 @@
 <?php
-class JP_Admin_Functions {
+class NB_Admin_Functions {
 
 	function __construct() {
 		add_action( 'wp_enqueue_scripts', array($this, 'front_enqueue_styles') );
@@ -128,7 +128,7 @@ class JP_Admin_Functions {
 	}
 }
 
-if ( class_exists( 'JP_Admin_Functions' ) ) {
-    $JP_Admin_Functions = new JP_Admin_Functions();
+if ( class_exists( 'NB_Admin_Functions' ) ) {
+    $NB_Admin_Functions = new NB_Admin_Functions();
 }
 ?>
